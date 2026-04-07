@@ -104,7 +104,7 @@ function FloatingBranchCard({ branch, delay, color }) {
 
 export default function Home() {
   const handleLogin = () => {
-    window.location.href = "/auth/github";
+    window.location.href = `${import.meta.env.VITE_API_URL || ""}/auth/github`;
   };
 
   return (
